@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Food, LLC</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed visible-xs" data-toggle="collapse" data-target="#navbar-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Food, LLC</a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="navbar-collapse">
+        <ul class="nav navbar-nav visible-xs">
+          <li><a href="#chicken">Chicken</a></li>
+          <li><a href="#beef">Beef</a></li>
+          <li><a href="#sushi">Sushi</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Heading -->
+  <div class="container">
+    <h1 class="text-center">Our Menu</h1>
+  </div>
+
+  <!-- Main Section -->
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <section class="main-section">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse in turpis vel libero tempus commodo. Vestibulum rutrum velit nec dapibus vulputate. Integer ornare luctus dignissim. Curabitur vulputate feugiat nisl, a aliquam erat sagittis a. Proin posuere feugiat lacus, sit amet gravida libero viverra in. Sed fringilla sapien a augue sodales, a mattis nulla vestibulum. Sed quis tincidunt lectus. Suspendisse potenti. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vivamus euismod justo libero, nec dapibus nisi fermentum sed. Sed ac nisi ut nibh convallis bibendum.</p>
+          <p>Aliquam erat volutpat. Vivamus ut fermentum velit. Vestibulum eleifend enim nisi, sed lobortis augue consectetur sed. Curabitur vestibulum lacinia nisl, at vulputate leo mollis a. Phasellus semper justo ut ante vehicula tristique. Donec fermentum, purus ac finibus porttitor, metus arcu vestibulum justo, ac congue enim sapien sed est. Proin laoreet malesuada lorem, sed porttitor nisi accumsan nec.</p>
+          <p style="margin-bottom: 500px">(Scroll down to see more content...)</p>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+
+</html>
