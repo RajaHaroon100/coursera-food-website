@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger Palace - Fast Food & More</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> 
+    <script src='index.js'></script>
+ 
+</head>
+<body>
+    <header>
+        <div class="logo">Xeyner</div>
+        <p>Serving the best fast food since 2023</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#locations">Locations</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <section class="hero" id="home">
+        <h1>TRY OUR NEW SPECIALS!</h1>
+        <p>Limited time offers - Available this week only</p>
+    </section>
+    
+    <div class="container">
+        <section id="menu">
+            <h2 class="section-title">OUR SPECIAL MENU</h2>
+            
+            <div class="menu">
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd" alt="Special Burger">
+                    <div class="menu-item-content">
+                        <h3>Palace Special Burger <span class="special-badge">NEW</span></h3>
+                        <p>Double beef patty with special sauce, cheese, bacon, lettuce, tomato, and pickles on a brioche bun</p>
+                        <div class="price">$12.99</div>
+                    </div>
+                </div>
+                
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1559847844-5315695dadae" alt="Spicy Chicken Sandwich">
+                    <div class="menu-item-content">
+                        <h3>Spicy Nashville Chicken <span class="special-badge">HOT</span></h3>
+                        <p>Crispy chicken breast with our signature Nashville hot sauce, pickles, and coleslaw on a toasted bun</p>
+                        <div class="price">$10.99</div>
+                    </div>
+                </div>
+                
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1544025162-d76694265947" alt="Loaded Fries">
+                    <div class="menu-item-content">
+                        <h3>Loaded Bacon Cheese Fries <span class="special-badge">BESTSELLER</span></h3>
+                        <p>Crispy fries topped with melted cheese, bacon bits, green onions, and our special sauce</p>
+                        <div class="price">$8.99</div>
+                    </div>
+                </div>
+                
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd" alt="Salad">
+                    <div class="menu-item-content">
+                        <h3>Southwest Chicken Salad</h3>
+                        <p>Fresh greens with grilled chicken, corn, black beans, avocado, tortilla strips, and chipotle ranch</p>
+                        <div class="price">$11.99</div>
+                    </div>
+                </div>
+                
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38" alt="Pizza">
+                    <div class="menu-item-content">
+                        <h3>Pepperoni Feast Pizza <span class="special-badge">SPECIAL</span></h3>
+                        <p>12" pizza with double pepperoni, mozzarella, and our signature tomato sauce</p>
+                        <div class="price">$14.99</div>
+                    </div>
+                </div>
+                
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a" alt="Milkshake">
+                    <div class="menu-item-content">
+                        <h3>Oreo Cookie Milkshake</h3>
+                        <p>Creamy vanilla milkshake blended with Oreo cookies and topped with whipped cream</p>
+                        <div class="price">$5.99</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="locations">
+            <h2 class="section-title">OUR LOCATION</h2>
+            <div class="map-container">
+                <div id="map"></div>
+            </div>
+        </section>
+    </div>
+    
+    <footer id="contact">
+        <h3>Xeyner</h3>
+        <p>Sailkot Road, Jalalpur Jattan,</p>
+        <p>Phone: +92 304 2496160</p>
+        <p>Email: its.haroon100@gmail.com</p>
+        
+        <div class="hours">
+            <div>
+                <h4>Opening Hours</h4>
+                <p>Monday-Friday: 2am-12pm</p>
+                <p>Saturday: 11am-12pm</p>
+                <p>Sunday: 11am-12pm</p>
+            </div>
+            <div>
+                <h4>Drive-Thru Hours</h4>
+                <p>Monday-Friday: 7am-11pm</p>
+                <p>Weekends: 8am-11pm</p>
+            </div>
+        </div>
+        
+        <p>&copy; 2023 Xeyner. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript for Map -->
+    <script>
+        // Initialize and display the map
+        function initMap() {
+            // Coordinates for the restaurant location
+            const location = { lat: 40.7128, lng: -74.0060 }; // New York coordinates as example
+            
+            // Create the map centered at the location
+            const map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 15,
+                center: location,
+                styles: [
+                    {
+                        "featureType": "poi",
+                        "stylers": [
+                            { "visibility": "off" }
+                        ]
+                    }
+                ]
+            });
+            
+            // Add a marker at the location
+            new google.maps.Marker({
+                position: location,
+                map: map,
+                title: "Burger Palace Main Location"
+            });
+        }
+    </script>
+    
+    <!-- Load Google Maps API -->
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+    </script>
+</body>
+</html>
